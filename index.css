@@ -29,8 +29,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(19, 19, 19);   
+    align-items: center;  
+    
+    
 }
 
 .menu-item {
@@ -38,22 +39,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
     border-bottom: 1px solid rgb(150, 150, 150);
-    
-    
 }
 
 .item-emoji {
     text-align: center;
     font-size: 50px;
-    width: 20%;
     
 }
 
 .item-description {
     width: 250px;
-    color: white;
+    color: black;
     
     
 }
@@ -74,7 +72,6 @@ body {
 }
 
 .button-container {
-    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,14 +87,90 @@ body {
     border-radius: 50%;
     font-size: 20px;
     background: none;
-    color: white;
-    border: 1px solid white;
+    color: black;
+    border: 1px solid gray;
+}
+
+.add-item-btn:hover {
+    cursor: pointer;
+    background-color: lightblue;
+    border-radius: 25px;
+    color: black;
+    font-weight: bold;
 }
 
 #cart {
-    background-color: black;
-    color: white;
+    color: black;
+    margin: 0 auto;
+    width: 90%;    
+}
+
+#title {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+#item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#item-container >* {
+    margin: 0 20px 20px 0;
+}
+
+.remove-btn {
+    color: grey;
     margin: 0;
-    
-    
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.remove-btn:hover {
+    cursor: pointer;
+    background-color: lightblue;
+    border-radius: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+#order-btn {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 25px;
+    background-color: lightblue;
+    height: 40px;
+    padding: 0 20px;
+    width: fit-content;    
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#order-btn:hover {
+    background-color: greenyellow;
+    cursor: pointer;  
+}
+
+#items {
+    border-bottom: 1px solid grey;
+}
+
+#total {
+    text-align: end;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
 }
